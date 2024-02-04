@@ -5,15 +5,15 @@
 
 <nav>
 	<a href="{base}/">
-		<div class="the-wrapper"><h3 aria-label="The">THE</h3></div>
+		<img src="{base}/logo.png" alt="Inflation Control Logo"  />
 		<h1 aria-label={title}>{title}</h1>
 	</a>
 </nav>
 
 <style>
 	@font-face {
-		font-family: 'Bungee-Regular';
-		src: url('$lib/assets/fonts/Bungee-Regular.ttf');
+		font-family: 'Inter-SemiBold';
+		src: url('$lib/assets/fonts/Inter-SemiBold.ttf');
 		font-display: swap;
 	}
 	nav {
@@ -23,32 +23,30 @@
 		display: flex;
 		align-items: center;
 		position: fixed;
-		background-color: #fdfdfd;
+		background-color: #f4d933;
 		z-index: 30;
 	}
 	h1 {
-		font-family: 'Bungee-Regular', sans-serif;
+		margin-left: 2.5rem;
+		font-family: 'Inter-SemiBold', sans-serif;
 		font-size: 2.7rem;
 		font-weight: 900;
-		letter-spacing: -0.03rem;
+		letter-spacing: -0.15rem;
 	}
 
-	.the-wrapper {
+	img {
+		margin-left: 2rem;
+		height: 4.5rem;
 		margin-left: 3rem;
-		display: flex;
-		align-items: center;
-		color: #05d2d9;
-	}
-
-	h3 {
-		transform: rotate(-90deg) translateY(0.5rem);
 	}
 
 	a {
-		font-family: 'Bungee-Regular', sans-serif;
+		font-family: 'Inter-SemiBold', sans-serif;
 		display: flex;
 		color: #170d1e;
 		text-decoration: none;
+		display: flex;
+		align-items: center;
 	}
 
 	@media (max-width: 500px) {

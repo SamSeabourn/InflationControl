@@ -5,7 +5,7 @@
 <section id="hero">
 	<slot />
 </section>
-<div class="repeating-pattern" style="background-image: url({base + '/repeater.webp'})" />
+<div class="hero-image" style="background-image: url({base + '/rescue-banner.webp'})" />
 <div class="gradient-overlay" />
 
 <style>
@@ -16,13 +16,14 @@
 		background-color: #f2f3f6;
 	}
 
-	.repeating-pattern {
-		background-repeat: repeat;
+	.hero-image {
 		position: absolute;
+		top: 0rem;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 75rem;
 		width: 100%;
-		height: 150%;
-		top: 0;
-		background-size: 40rem;
 	}
 
 	.gradient-overlay {

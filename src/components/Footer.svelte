@@ -1,12 +1,8 @@
-<script>
-</script>
-
 <footer>
 	<div class="wrapper">
-		<a href="mailto:sam.seabourn@gmail.com"
-			><span class="mailbox">💬 </span> chromeextensionstudio@gmail.com</a
+		<a href="https://www.samseabourn.com" target="_blank"
+			><span class="mailbox"></span> Site by Sam Seabourn</a
 		>
-		<span> Built by... us obviously</span>
 	</div>
 </footer>
 
@@ -20,7 +16,7 @@
 	footer {
 		width: 100%;
 		height: 3.25rem;
-		background-color: #05d2d9;
+		background-color: #f4d933;
 		display: flex;
 	}
 
@@ -50,6 +46,7 @@
 
 	span {
 		color: #170d1e;
+		opacity: 0.7;
 		font-family: 'GeneralSans-Variable', sans-serif;
 		font-size: 1rem;
 		font-style: normal;

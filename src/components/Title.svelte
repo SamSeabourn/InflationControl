@@ -24,6 +24,6 @@
 	}
 
 	span {
-		color: #05d2d9;
+		color: #f4d933;
 	}
 </style>

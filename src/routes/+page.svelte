@@ -1,8 +1,9 @@
 <script>
 	import { base } from '$app/paths';
 	import AirGap from '../components/AirGap.svelte';
+	import Button from '../components/Button.svelte';
 	import CTA from '../components/CTA.svelte';
-	import Cogs from '../components/Cogs.svelte';
+	import CTA2 from '../components/CTA2.svelte';
 	import ContentPadding from '../components/ContentPadding.svelte';
 	import ContentPanel from '../components/ContentPanel.svelte';
 	import FadeInOnScroll from '../components/FadeInOnScroll.svelte';
@@ -12,55 +13,86 @@
 	import LogoPuck from '../components/LogoPuck.svelte';
 	import NavBar from '../components/NavBar.svelte';
 	import Paragraph from '../components/Paragraph.svelte';
+	import ProductImage from '../components/ProductImage.svelte';
 	import Title from '../components/Title.svelte';
 </script>
 
-<NavBar title={'Chrome Extension Agency'} />
-<Cogs />
+<NavBar title={'INFLATION CONTROL'} />
 <HeroPanel>
 	<HeroText />
 </HeroPanel>
 <ContentPanel>
 	<ContentPadding>
-		<Title label="Extend the web">Extend the web</Title>
+		<Title label="About Us">About Us</Title>
 		<Paragraph>
-			We specialize in crafting custom extensions for Twitch, Chrome, and Firefox. We empower
-			businesses and individual creators to elevate their online presence through bespoke
-			plugins. Whether you're looking to enhance user engagement, integrate an existing
-			product, or unlock new capabilities, our team of expert developers can bring your vision
-			to life. Partner with us to transform your ideas into reality, and extend your reach in
-			the ever-evolving web landscape
+			As the exclusive New Zealand agent for Vetter lifting and pipe sealing bags, we
+			specialise in high-quality pipe sealing, bypass, and testing plugs, vital for
+			professionals in wastewater, mains, and domestic drainage sectors. We also cater to your
+			lifting needs with our range of innovative lifting bags for rescue teams.
 		</Paragraph>
-		<div style="display:flex">
-			<LogoPuck imageSource="{base}/chrome-logo.svg" imageAlt="Google Chrome" />
-			<LogoPuck imageSource="{base}/firefox-logo.svg" imageAlt="Firefox Browser" />
-			<LogoPuck imageSource="{base}/twitch-logo.svg" imageAlt="Twitch" />
-			<LogoPuck imageSource="{base}/chatgpt-logo.svg" imageAlt="Chat GPT" />
-		</div>
 		<AirGap />
-		<FadeInOnScroll id={'youDecide'}>
-			<Title label="You decide">You Decide</Title>
+		<FadeInOnScroll id="vetter">
+			<Title label="Vetter">Vetter</Title>
 			<Paragraph>
-				We offer the flexibility to choose your preferred technology, ensuring our solutions
-				align perfectly with your existing codebase. Our team is skilled in a range of
-				technologies, ready to adapt to your specific needs for seamless integration
+				Vetter specializes in high-pressure inflatable tools for emergency teams. Known for
+				their robust air bags, ideal for lifting vehicles and debris, and pipe sealing bags,
+				crucial for sealing and redirecting fluid leaks, Vetter products are essential in
+				managing rescue operations and emergency scenarios efficiently and safely
 			</Paragraph>
-			<div style="display:flex">
-				<LogoPuck imageSource="{base}/react-logo.svg" imageAlt="ReactJS" />
-				<LogoPuck imageSource="{base}/svelte-logo.svg" imageAlt="SvelteKit" />
-				<LogoPuck imageSource="{base}/angular-logo.svg" imageAlt="AngularJS" />
-				<LogoPuck imageSource="{base}/vue-logo.svg" imageAlt="VueJS" />
-			</div>
-			<div style="display:flex;margin-left: 3rem">
-				<LogoPuck imageSource="{base}/js-logo.svg" imageAlt="Javascript" />
-				<LogoPuck imageSource="{base}/ts-logo.svg" imageAlt="Typescript" />
-				<LogoPuck imageSource="{base}/mui-logo.svg" imageAlt="Material UI" />
-				<LogoPuck imageSource="{base}/tailwind-logo.svg" imageAlt="Tailwind" />
-			</div>
+		</FadeInOnScroll>
+		<FadeInOnScroll id="vetterLinks">
+			<img src="{base}/vetter-logo.svg" alt="Vetter Logo" style="height: 13rem" />
+			<br />
+			<Button btnFunc={async () => window.open('https://vetter.de/en/', '_blank')}>
+				Vetter's Website
+			</Button>
 		</FadeInOnScroll>
 		<AirGap />
-		<CTA href={'chromeextension.agency'}>Lets build something together</CTA>
+		<FadeInOnScroll id="pipeSealing">
+			<Title label="Pipe Sealing">Pipe Sealing</Title>
+			<Paragraph>
+				Vetter Pipe Sealing bags are an ideal choice for fast and dependable drainage
+				sealing, offering the flexibility of adjustable contact pressure to suit various
+				requirements
+			</Paragraph>
+			<div style="display:flex">
+				<ProductImage desc="Pipe sealing bag diagram" imageSource="{base}/pipe01.png" />
+				<ProductImage desc="Large emergency bag getting inserted into a pipe" imageSource="{base}/pipe02.png" />
+				<ProductImage desc="Range of pipe sealing bags" imageSource="{base}/pipe03.png" />
+				<ProductImage desc="Range of large pipe sealing bags" imageSource="{base}/pipe04.png" />
+			</div>
+			<br />
+			<Button btnFunc={async () => window.open('https://vetter.de/en/market-specific-solutions/hazmat-program/sealing-pipelines-and-gullies/', '_blank')}>
+				View Products
+			</Button>
+		</FadeInOnScroll>
+		<AirGap/>
+		<FadeInOnScroll id="liftingBag">
+			<Title label="Emergency Lifting Bags">Lifting Bags</Title>
+			<Paragraph>
+				Vetter's Pneumatic Lifting Bags are an essential tool for rescue operations, ideal
+				for lifting vehicles or any large debris. Engineered in Germany, Vetter lifting bag
+				ensure precision and safety with even pressure distribution and a stable, anti-slip
+				surface for challenging environments.
+			</Paragraph>
+			<div style="display:flex">
+				<ProductImage desc="Pneumatic lifting bag lifting rubble" imageSource="{base}/lift01.png" />
+				<ProductImage desc="Lifting bag example" imageSource="{base}/lift02.png" />
+				<ProductImage desc="Thin lifting bag between slabs" imageSource="{base}/lift03.png" />
+				<ProductImage desc="Lifting 112 tons with a lifting bag" imageSource="{base}/lift04.png" />
+			</div>
+			<br />
+			<Button btnFunc={async () => window.open('https://vetter.de/en/market-specific-solutions/emergency-pneumatics/lifting-bags/', '_blank')}>
+				View Products
+			</Button>
+		</FadeInOnScroll>
+		<AirGap/>
+		<FadeInOnScroll id="cta">
+			<CTA2 href={'https://vetter.de/media/pdf/ba/78/00/2206_VET_Katalog_1_Rettung_Gefahrgut_EN_Web.pdf'} aTagText={"here"}>
+				View the full Vetter product range
+			</CTA2>
+		</FadeInOnScroll>
 		<AirGap />
-	</ContentPadding>
+	</ContentPadding> 
 	<Footer />
 </ContentPanel>

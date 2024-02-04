@@ -1,54 +1,7 @@
-<script lang="ts">
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		const typedTextSpan = document.querySelector('.typed-text') as HTMLSpanElement;
-		const words = ['BROWSER', 'CHROME', 'TWITCH', 'FIREFOX', 'CHAT GPT'];
-		const colors = ['#fff', '#1A73E8', '#5A3E85', '#FFB724', '#74AA9C'];
-		let wordIndex = 0;
-		let charIndex = 0;
-		let isRemoving = false;
-		let typingDelay = 120;
-		let newWordDelay = 4500;
-
-		const type = () => {
-			if (isRemoving) {
-				typedTextSpan.style.color = '#fdfdfd';
-				if (charIndex > 0) {
-					if (typedTextSpan) {
-						typedTextSpan.textContent = words[wordIndex].substring(0, charIndex - 1);
-						charIndex--;
-						setTimeout(type, typingDelay);
-					}
-				} else {
-					isRemoving = false;
-					wordIndex = (wordIndex + 1) % words.length;
-					setTimeout(type, typingDelay);
-				}
-			} else {
-				if (charIndex < words[wordIndex].length) {
-					if (typedTextSpan) {
-						typedTextSpan.textContent += words[wordIndex].charAt(charIndex);
-						charIndex++;
-						setTimeout(type, typingDelay);
-					}
-				} else {
-					if (typedTextSpan) {
-						typedTextSpan.style.color = colors[wordIndex];
-					}
-					// Start removing text
-					isRemoving = true;
-					setTimeout(type, newWordDelay);
-				}
-			}
-		};
-		type();
-	});
-</script>
-
 <div class="container">
 	<p>
-		WE ARE THE<br /> <span class="typed-text"></span> <span class="cursor"></span><br /> EXPERTS
+		SEALING, LIFTING AND <br />
+		EMERGENCY AIR BAGS
 	</p>
 </div>
 
