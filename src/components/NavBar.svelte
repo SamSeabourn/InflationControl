@@ -5,7 +5,7 @@
 
 <nav>
 	<a href="{base}/">
-		<img src="{base}/logo.png" alt="Inflation Control Logo"  />
+		<img src="{base}/logo.webp" alt="Inflation Control Logo" />
 		<h1 aria-label={title}>{title}</h1>
 	</a>
 </nav>

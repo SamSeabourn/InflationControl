@@ -28,7 +28,7 @@
 
 	.gradient-overlay {
 		position: absolute;
-		width: 100%;
+		width: 80%;
 		height: 150%;
 		top: 0;
 		background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);

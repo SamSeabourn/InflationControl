@@ -1,11 +1,11 @@
 <script lang="ts">
 	export let href: string;
-	export let aTagText: string
+	export let aTagText: string;
 </script>
 
 <p>
 	<slot />
-	<a href={href}>{aTagText}</a>
+	<a {href}>{aTagText}</a>
 </p>
 
 <style>
@@ -34,7 +34,7 @@
 	a {
 		color: #f4d933;
 		font-family: 'GeneralSans-Variable', sans-serif;
-		text-decoration: none;
+		text-decoration: underline .25rem #f4d933;
 	}
 
 	a:hover {
@@ -46,6 +46,5 @@
 			-0.1rem 0.1rem 0 #f4d933,
 			0.1rem 0.1rem 0 #f4d933;
 		text-decoration: none;
-		
 	}
 </style>
