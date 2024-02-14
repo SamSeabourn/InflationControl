@@ -34,7 +34,7 @@
 		color: #170d1e;
 		cursor: pointer;
 		font-family: 'GeneralSans-Variable', sans-serif;
-		text-decoration: underline .25rem #f4d933;
+		text-decoration: underline 0.25rem #f4d933;
 	}
 
 	a:hover {

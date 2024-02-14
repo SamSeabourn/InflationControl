@@ -38,12 +38,11 @@
 		div {
 			max-width: 59vw;
 		}
-
-		.container { 
-			margin-left: 4.25rem;
-		}
-
 	}
 
-
+	@media (max-width: 500px) {
+		.container {
+			margin: 0 4.25rem 0 4.25rem;
+		}
+	}
 </style>
