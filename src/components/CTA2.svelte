@@ -4,7 +4,6 @@
 </script>
 
 <p>
-	<slot />
 	<a {href}>{aTagText}</a>
 </p>
 
@@ -25,26 +24,24 @@
 	}
 
 	@media (max-width: 1640px) {
-		P {
+		p {
 			max-width: 49rem;
 			font-size: 2.5rem;
 			line-height: 2.2rem;
 		}
 	}
 	a {
-		color: #f4d933;
+		color: #170d1e;
+		cursor: pointer;
 		font-family: 'GeneralSans-Variable', sans-serif;
 		text-decoration: underline .25rem #f4d933;
 	}
 
 	a:hover {
-		color: #fff;
+		color: #170d1e;
+		opacity: 0.8;
+		cursor: pointer;
 		font-weight: 600;
-		text-shadow:
-			-0.1rem -0.1rem 0 #f4d933,
-			0.1rem -0.1rem 0 #f4d933,
-			-0.1rem 0.1rem 0 #f4d933,
-			0.1rem 0.1rem 0 #f4d933;
 		text-decoration: none;
 	}
 </style>

@@ -23,6 +23,13 @@
 		position: relative;
 	}
 
+	.container {
+		height: 100%;
+		margin-left: 9.5rem;
+		display: flex;
+		align-items: center;
+	}
+
 	@media (max-width: 1280px) {
 		p {
 			z-index: 10;
@@ -31,12 +38,12 @@
 		div {
 			max-width: 59vw;
 		}
+
+		.container { 
+			margin-left: 4.25rem;
+		}
+
 	}
 
-	.container {
-		height: 100%;
-		margin-left: 9.5rem;
-		display: flex;
-		align-items: center;
-	}
+
 </style>

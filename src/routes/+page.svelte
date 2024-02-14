@@ -4,6 +4,7 @@
 	import Button from '../components/Button.svelte';
 	import CTA2 from '../components/CTA2.svelte';
 	import ContentPadding from '../components/ContentPadding.svelte';
+	import ContactDetails from '../components/ContactDetails.svelte'
 	import ContentPanel from '../components/ContentPanel.svelte';
 	import FadeInOnScroll from '../components/FadeInOnScroll.svelte';
 	import Footer from '../components/Footer.svelte';
@@ -115,10 +116,29 @@
 		<FadeInOnScroll id="cta">
 			<CTA2
 				href={'https://vetter.de/media/pdf/ba/78/00/2206_VET_Katalog_1_Rettung_Gefahrgut_EN_Web.pdf'}
-				aTagText={'View the full Vetter product range'}
+				aTagText={`View Vetter's full product range`}
 			>
 			</CTA2>
 		</FadeInOnScroll>
+		<AirGap />
+		<FadeInOnScroll id="contact-us">
+			<Title label="Contact us details">Contact Us</Title>
+			<ContactDetails iconURL="{base}/phone.svg" iconAlt="phone symbol">
+				09-483-6607
+			</ContactDetails>
+			<ContactDetails iconURL="{base}/phone.svg" iconAlt="phone symbol">
+				021-270-7498 (Mobile)
+			</ContactDetails>
+			<a href="mailto:contact@inflationcontrol.co.nz" style="text-decoration-color:#f4d933;font-weight:900">
+				<ContactDetails iconURL="{base}/email.svg" iconAlt="email symbol">
+					contact@inflationcontrol.co.nz
+				</ContactDetails>
+			</a>
+			<ContactDetails iconURL="{base}/fax.svg" iconAlt="fax symbol">
+				09-483-6607
+			</ContactDetails>
+		</FadeInOnScroll>
+		<AirGap />
 		<AirGap />
 	</ContentPadding>
 	<Footer />

@@ -22,7 +22,7 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		height: 75rem;
+		height: 85rem;
 		width: 100%;
 	}
 
