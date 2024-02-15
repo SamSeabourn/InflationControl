@@ -36,7 +36,7 @@
 				Vetter specializes in high-pressure inflatable tools for emergency teams. Known for
 				their robust air bags, ideal for lifting vehicles and debris, and pipe sealing bags,
 				crucial for sealing and redirecting fluid leaks, Vetter products are essential in
-				managing rescue operations and emergency scenarios efficiently and safely
+				managing rescue operations and emergency scenarios efficiently and safely.
 			</Paragraph>
 		</FadeInOnScroll>
 		<FadeInOnScroll id="vetterLinks">
@@ -52,7 +52,7 @@
 			<Paragraph>
 				Vetter Pipe Sealing bags are an ideal choice for fast and dependable drainage
 				sealing, offering the flexibility of adjustable contact pressure to suit various
-				requirements
+				requirements.
 			</Paragraph>
 			<div style="display:flex">
 				<ProductImage desc="Pipe sealing bag diagram" imageSource="{base}/pipe01.webp" />
@@ -82,7 +82,7 @@
 			<Title label="Emergency Lifting Bags">Lifting Bags</Title>
 			<Paragraph>
 				Vetter's Pneumatic Lifting Bags are an essential tool for rescue operations, ideal
-				for lifting vehicles or any large debris. Engineered in Germany, Vetter lifting bag
+				for lifting vehicles or any large debris. Engineered in Germany, Vetter lifting bags
 				ensure precision and safety with even pressure distribution and a stable, anti-slip
 				surface for challenging environments.
 			</Paragraph>
